@@ -1,0 +1,20 @@
+<h2>Template</h2>
+<h3>Text interpolation</h3>
+{{name}} {{teste}}
+<hr />
+<h3>Property binding</h3>
+<button [disabled]="isDisabled">aa</button>
+<hr />
+<h3>Attribute binding</h3>
+<p [attr.class]="name">D</p>
+<hr />
+<h3>Event binding</h3>
+<button (click)="somar()">+</button>
+<button (click)="subtrair()">-</button>
+<hr />
+<h3>Two way binding</h3>
+<input type="text" [(ngModel)]="name">
+<hr>
+<h3>NgClass e NgStyle</h3>
+<div [ngClass]="{'background-red': teste > 12345, 'background-blue': teste <= 12345}">Div</div>
+<div [ngStyle]="{'background-color': teste > 12345 ? 'pink' : 'yellow'}">Div</div>
